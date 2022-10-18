@@ -72,7 +72,8 @@ int _puts(char *str);
 int _putchar(int c);
 
 /* print_functions.c module */
-int print_char(va_list ap, params_t *params);
+int print_int(va_list types, char buffer[],
+		        int flags, int width, int precision, int size);
 int print_int(va_list ap, params_t *params);
 int print_string(va_list ap, params_t *params);
 int print_percent(va_list ap, params_t *params);
@@ -117,4 +118,4 @@ char *get_precision(char *p, params_t *params, va_list ap);
 /* _prinf.c module */
 int _printf(const char *format, ...);
 
-#endif /MAIN_H/
+#endif
